@@ -1,0 +1,35 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+.example {
+  font-family: sans-serif;
+  padding: 50px;
+}
+.grid {
+  display: grid;
+  grid-gap: var(--gutter);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.header h1 {
+  font-size: 10vw;
+  background: blue;
+  color: red;
+}
+:root {
+  --gutter: 30px;
+  --bg-light-blue: hsl(240, 100%, 50%, 0.03);
+}
+
+.header h3 {
+  color: blue;
+  background: var(--bg-light-blue);
+  padding: 20px var(--gutter);
+}
+
+body {
+  font-family: "Avenir", sans-serif;
+  color: red;
+  margin: 15px;
+}
